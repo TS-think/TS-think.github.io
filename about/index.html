@@ -43,8 +43,6 @@
     
     <title>
         
-            Categories: Video | 
-        
         Code 002
     </title>
 
@@ -217,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Code 002">
-    <meta name="msapplication-starturl" content="https://ts-think.github.io/categories/Video/">
+    <meta name="msapplication-starturl" content="https://ts-think.github.io/about/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Code 002">
@@ -232,9 +230,9 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://ts-think.github.io/categories/Video/">
+    <meta property="og:url" content="https://ts-think.github.io/about/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Categories: Video | Code 002">
+    <meta property="og:title" content="Code 002">
     <meta property="og:image" content="/img/007.jpg">
     <meta property="og:description" content="">
     
@@ -246,7 +244,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://ts-think.github.io/categories/Video/index.html" />
+        <link rel="canonical" href="https://ts-think.github.io/about/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -286,99 +284,190 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
-    
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/31/Video-Lists/">Video Lists</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/31/Video-Lists/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/004.jpg" width="44px" height="44px" alt="CTS's avatar">
-            </div>
-            <div>
-                <strong>CTS</strong>
-                <span>Jan 31, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Video/">Video</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/004.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>CTS</strong>
+        <span>Jan 31, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACW0lEQVR42u3aQVLDMAwF0Nz/0uUADOmXZLuh87ximJD4eWEJSdfrq9eFh4eHh4eHh4f3MN4Vr+bHfv3tX29Onkz2hoeHh3eGV91izpj8pvldPDw8vIO85MqOruY4kCTfKocTPDw8vEfyJoEhAeDh4eF9H28SNnpHhoeHh/dMXvIPf15srb4t2fr2WgseHh5ezMubTOd/Ptrfw8PDwwt4vVGA3tWfbPo1Xnh4eHi7eflFnCTiyfPVMaxyyo6Hh4e3mVcukgYhYdWR3b8tKkbg4eHhbeDdfyxpYi24ysdNODw8PLyTvLx5Xy0orG1ujcq4eHh4eEt5eWrbCxjVZ5Jg8yak4eHh4X2Il6fCqwoZ5dQZDw8P7wG86iDUJP2tDloVQg4eHh7ecd4k2e21uKrFjsWTEXh4eHhjXkKtpsKTIm+SWOPh4eF9lpdf69XP9xpmC4au8PDw8DbzeiXavLmVHEr+ni0pNR4eHt4tb21ranIQvTYbHh4e3jN5+XhBtdlfTeiTg8PDw8PbzasWHarI6qhBPqBQLkbg4eHhbeCNGvbF9lievlefwcPDwzvJywsE8wCQH1z5i3h4eHgHeQsKATEy3/qWoSs8PDy8Aa+6etf6ZLvlgi8eHh7eZt4Vr14Rtpdq34eTNweEh4eHd4SXF0zno6uTwBC9AQ8PD+8gr3pBV8sQk7GDBUNXeHh4eB/l5ZvLm2r3W8+ReHh4eP+LNyku9AoZRwMDHh4eXqsYMW/2V9tdSdMLDw8P7zyvVwLoXf15YaJ6BHh4eHhneN+38PDw8PDw8PDwHrB+ACkM7TmM2jjwAAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=https://ts-think.github.io/about/index.html&pic=https://ts-think.github.io/img/008.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=https://ts-think.github.io/about/index.html&via=CTS" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://ts-think.github.io/about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://ts-think.github.io/about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h1>
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
+                        </strong>
+                        <br>
+                        <strong>Link to this article: </strong><a href="https://ts-think.github.io/about/index.html">https://ts-think.github.io/about/index.html</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -550,14 +639,6 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
-
-                    
-                        <!-- Footer Top Button -->
-                        <div id="back-to-top" class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
 
                     
 
